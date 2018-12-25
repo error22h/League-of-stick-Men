@@ -1,0 +1,11 @@
+C:\Users\User\AppData\Local\Temporary Projects\_________\bin\Debug\_________.exe
+C:\Users\User\AppData\Local\Temporary Projects\_________\bin\Debug\_________.pdb
+C:\Users\User\AppData\Local\Temporary Projects\_________\bin\Debug\_________.xml
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\_________.Form1.resources
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\_________.Resources.resources
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\_________.vbproj.GenerateResource.Cache
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\_________.exe
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\_________.xml
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\_________.pdb
+C:\Users\User\AppData\Local\Temporary Projects\_________\obj\Debug\_________.Form2.resources

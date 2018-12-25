@@ -1,7 +1,7 @@
 ﻿Public Class Form2
-    Dim xspeed As Double = 3
+    Dim xspeed As Double = -3
     Dim yspeed As Double
-    Dim gravity As Double = 0.4
+    Dim gravity As Double = 0.1
     Dim t As Integer
    
     Private Sub tmr_ghost_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmr_ghost.Tick
@@ -15,15 +15,7 @@
             For i = 0 To 3
                 ghost(i).X += xspeed
                 ghost(i).Y += yspeed
-                If ghost(i).X < 0 Then
-                    If xspeed < 0 Then
-                        xspeed *= -1
-                    End If
-                ElseIf ghost(i).X + 55 > Me.Width Then
-                    If xspeed > 0 Then
-                        xspeed *= -1
-                    End If
-                End If
+
             Next
 
         Next
@@ -39,20 +31,21 @@
                         If ghosts.Bounds.IntersectsWith(black_blocks.bounds) Then
                             If ghosts.Bottom > black_blocks.top Then
                                 'ghosts.Top = black_blocks.top - ghost1.Height
-                                ghosts.top += -20
+                                ghosts.top += -30
                                 yspeed = 3
                                 'tmr_jump.Start()
                             End If
                         End If
                     End If
                 End If
-                If xspeed > 0 Then
-                    ghosts.image = My.Resources.ghost_right
-                Else
-                    ghosts.image = My.Resources.ghost_left
+                If ghosts.left < 0 And xspeed < 0 Then
+                    xspeed *= -1
+                ElseIf ghosts.left > Me.Width - ghost1.Width And xspeed > 0 Then
+                    xspeed *= -1
                 End If
             Next
         Next
+
     End Sub
 
     Private Sub Form2_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
