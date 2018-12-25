@@ -27,6 +27,7 @@ Partial Class Form2
         Me.tmr_ghost = New System.Windows.Forms.Timer(Me.components)
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar
         Me.tmr_jump = New System.Windows.Forms.Timer(Me.components)
+        Me.black_block8 = New System.Windows.Forms.PictureBox
         Me.black_block11 = New System.Windows.Forms.PictureBox
         Me.black_block10 = New System.Windows.Forms.PictureBox
         Me.black_block9 = New System.Windows.Forms.PictureBox
@@ -34,7 +35,6 @@ Partial Class Form2
         Me.ghost4 = New System.Windows.Forms.PictureBox
         Me.ghost3 = New System.Windows.Forms.PictureBox
         Me.ghost1 = New System.Windows.Forms.PictureBox
-        Me.black_block8 = New System.Windows.Forms.PictureBox
         Me.black_block7 = New System.Windows.Forms.PictureBox
         Me.black_block6 = New System.Windows.Forms.PictureBox
         Me.black_block5 = New System.Windows.Forms.PictureBox
@@ -42,6 +42,9 @@ Partial Class Form2
         Me.black_block3 = New System.Windows.Forms.PictureBox
         Me.black_block2 = New System.Windows.Forms.PictureBox
         Me.black_block1 = New System.Windows.Forms.PictureBox
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.ghost_buster = New System.Windows.Forms.PictureBox
+        CType(Me.black_block8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,7 +52,6 @@ Partial Class Form2
         CType(Me.ghost4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ghost3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ghost1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.black_block8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,6 +59,7 @@ Partial Class Form2
         CType(Me.black_block3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.black_block1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ghost_buster, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tmr_ghost
@@ -75,6 +78,15 @@ Partial Class Form2
         'tmr_jump
         '
         Me.tmr_jump.Interval = 1
+        '
+        'black_block8
+        '
+        Me.black_block8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.black_block8.Location = New System.Drawing.Point(1137, 332)
+        Me.black_block8.Name = "black_block8"
+        Me.black_block8.Size = New System.Drawing.Size(416, 605)
+        Me.black_block8.TabIndex = 7
+        Me.black_block8.TabStop = False
         '
         'black_block11
         '
@@ -147,15 +159,6 @@ Partial Class Form2
         Me.ghost1.TabIndex = 8
         Me.ghost1.TabStop = False
         '
-        'black_block8
-        '
-        Me.black_block8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.black_block8.Location = New System.Drawing.Point(1137, 332)
-        Me.black_block8.Name = "black_block8"
-        Me.black_block8.Size = New System.Drawing.Size(416, 605)
-        Me.black_block8.TabIndex = 7
-        Me.black_block8.TabStop = False
-        '
         'black_block7
         '
         Me.black_block7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -219,12 +222,34 @@ Partial Class Form2
         Me.black_block1.TabIndex = 0
         Me.black_block1.TabStop = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 21.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(5, 78)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(105, 38)
+        Me.Label1.TabIndex = 20
+        Me.Label1.Text = "Label1"
+        '
+        'ghost_buster
+        '
+        Me.ghost_buster.BackColor = System.Drawing.Color.Red
+        Me.ghost_buster.Location = New System.Drawing.Point(136, 431)
+        Me.ghost_buster.Name = "ghost_buster"
+        Me.ghost_buster.Size = New System.Drawing.Size(69, 145)
+        Me.ghost_buster.TabIndex = 21
+        Me.ghost_buster.TabStop = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(1243, 745)
+        Me.Controls.Add(Me.ghost_buster)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.black_block8)
         Me.Controls.Add(Me.black_block11)
         Me.Controls.Add(Me.black_block10)
@@ -243,6 +268,7 @@ Partial Class Form2
         Me.Controls.Add(Me.black_block1)
         Me.Name = "Form2"
         Me.Text = "Form2"
+        CType(Me.black_block8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -250,7 +276,6 @@ Partial Class Form2
         CType(Me.ghost4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ghost3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ghost1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.black_block8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block5, System.ComponentModel.ISupportInitialize).EndInit()
@@ -258,7 +283,9 @@ Partial Class Form2
         CType(Me.black_block3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.black_block1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ghost_buster, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents black_block1 As System.Windows.Forms.PictureBox
@@ -279,4 +306,6 @@ Partial Class Form2
     Friend WithEvents black_block9 As System.Windows.Forms.PictureBox
     Friend WithEvents black_block10 As System.Windows.Forms.PictureBox
     Friend WithEvents black_block11 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents ghost_buster As System.Windows.Forms.PictureBox
 End Class

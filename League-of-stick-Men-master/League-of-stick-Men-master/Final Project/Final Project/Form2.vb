@@ -1,9 +1,11 @@
 ﻿Public Class Form2
     'Dim xspeed As Double = 3
     Dim yspeed As Double
+    Dim player_yspeed As Double
     Dim gravity As Double = 0.5
     Dim x_speed(3) As Double
     Dim ghost_pb(3) As PictureBox
+    Dim n As Integer = 1
 
     Dim t As Integer
    
@@ -16,22 +18,28 @@
 
         
 
-
-
         
+
         For Each black_blocks In Me.Controls
             For Each ghosts In Me.Controls
                 If black_blocks.name.ToString.Contains("black_block") Then
                     If ghosts.name.ToString.Contains("ghost") Then
                         If ghosts.Bounds.IntersectsWith(black_blocks.bounds) Then
-                            If ghosts.Bottom > black_blocks.top Then
+                            If ghosts.Bottom >= black_blocks.top Then
                                 'ghosts.Top = black_blocks.top - ghost1.Height
-                                ghosts.top += -20
+                                n = 0
+
+                                ghosts.TOP += -20
                                 yspeed = 3
+                                'player_yspeed = 2
+
                                 'tmr_jump.Start()
+
+
                             End If
+
                         End If
-                        
+
                     End If
                 End If
 
@@ -39,7 +47,10 @@
         Next
 
         yspeed += gravity
+        player_yspeed += 0.7 * gravity * n
         For i = 0 To 3
+            ghost_buster.Top += player_yspeed
+
 
             ghost_pb(i).Left += x_speed(i)
             ghost_pb(i).Top += yspeed
@@ -85,6 +96,14 @@
         If e.KeyCode = Keys.Space Then
             tmr_ghost.Start()
         End If
+
+       
+        If e.KeyCode = Keys.D Then
+            ghost_buster.Left += 10
+
+        ElseIf e.KeyCode = Keys.A Then
+            ghost_buster.Left -= 10
+        End If
     End Sub
     
     Private Sub tmr_jump_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tmr_jump.Tick
@@ -107,5 +126,6 @@
         ghost_pb(1) = ghost2
         ghost_pb(2) = ghost3
         ghost_pb(3) = ghost4
+        Label1.Text = fighter_name
     End Sub
 End Class

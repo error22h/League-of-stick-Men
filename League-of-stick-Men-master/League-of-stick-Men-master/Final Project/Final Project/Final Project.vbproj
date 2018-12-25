@@ -79,6 +79,7 @@
     <Compile Include="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -128,6 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\imageedit_1_6467545457.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-paper-parchment-scroll-clip-art-parchment-5ac49a90516a95.7207758615228340643335.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scroll_PNG_Clipart_Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
