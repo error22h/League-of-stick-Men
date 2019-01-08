@@ -48,6 +48,7 @@ Partial Class Form1
         Me.T_black_block12 = New System.Windows.Forms.PictureBox
         Me.PictureBox1 = New System.Windows.Forms.PictureBox
         Me.PictureBox3 = New System.Windows.Forms.PictureBox
+        Me.Credits = New System.Windows.Forms.Label
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.F_black_block11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.F_black_block10, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -299,6 +300,18 @@ Partial Class Form1
         Me.PictureBox3.TabIndex = 39
         Me.PictureBox3.TabStop = False
         '
+        'Credits
+        '
+        Me.Credits.AutoSize = True
+        Me.Credits.BackColor = System.Drawing.Color.Transparent
+        Me.Credits.Font = New System.Drawing.Font("Palatino Linotype", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Credits.ForeColor = System.Drawing.Color.Blue
+        Me.Credits.Location = New System.Drawing.Point(86, 435)
+        Me.Credits.Name = "Credits"
+        Me.Credits.Size = New System.Drawing.Size(114, 39)
+        Me.Credits.TabIndex = 40
+        Me.Credits.Text = "Credits"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -306,6 +319,7 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1035, 652)
+        Me.Controls.Add(Me.Credits)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
@@ -383,5 +397,6 @@ Partial Class Form1
     Friend WithEvents T_black_block12 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Credits As System.Windows.Forms.Label
 
 End Class

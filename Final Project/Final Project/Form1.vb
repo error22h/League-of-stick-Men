@@ -30,9 +30,6 @@
         End If
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-    End Sub
-
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         blackblocks(0) = F_black_block1
         blackblocks(1) = F_black_block2
@@ -52,7 +49,7 @@
         blackblocks(15) = T_black_block18
         blackblocks(16) = T_black_block19
         blackblocks(17) = T_black_block20
-       
+
         t(0) = 1
         t(1) = 1
         t(2) = 1
@@ -135,5 +132,24 @@
             End If
         Next
 
+    End Sub
+
+    Private Sub Credits_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Credits.Click
+        If TextBox1.Text = "" Then
+            MsgBox("Please choose your fighter name!")
+        ElseIf TextBox1.Text = "MC-Maor" Then
+            MsgBox("Good Luck Maor!!!")
+            fighter_name = TextBox1.Text
+            Me.Hide()
+            Form4.Show()
+        ElseIf TextBox1.Text.Length > 10 Then
+            MsgBox("This name is too long :( Please choose shorter name")
+            'ElseIf TextBox1.Text.Contains "h" Then
+
+        Else
+            fighter_name = TextBox1.Text
+            Me.Hide()
+            Form4.Show()
+        End If
     End Sub
 End Class

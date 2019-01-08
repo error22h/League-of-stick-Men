@@ -88,9 +88,72 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property Stickman___Normal_stand_at_fight__left_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman___Normal_stand_at_fight__left_", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property Stickman___Normal_stand_at_fight__right_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Stickman___Normal_stand_at_fight__right_", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman__Shield_at_fight__left_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman__Shield_at_fight__left_", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman__Shield_at_fight__right_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman__Shield_at_fight__right_", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman_kick_left() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman_kick_left", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman_kick_left_1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman_kick_left_1_", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman_kick_right() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman_kick_right", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman_kick_right_1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman_kick_right_1_", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman_punch_left() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman_punch_left", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property Stickman_punch_right() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Stickman_punch_right", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
